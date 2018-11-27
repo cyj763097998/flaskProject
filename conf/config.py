@@ -9,10 +9,10 @@ SECRET_KEY = os.urandom(24)
 DIALECT = 'mysql'
 DRIVER = 'mysqldb'
 USERNAME = 'root'
-PASSWORD = 'root'
-HOST = '10.4.19.200'
+PASSWORD = '123456'
+HOST = '127.0.0.1'
 PORT = '3306'
-DATABASE = 'news'
+DATABASE = 'db_demo'
 #连接
 SQLALCHEMY_DATABASE_URI = "{}+{}://{}:{}@{}:{}/{}?charset=utf8".format(DIALECT,DRIVER,USERNAME,PASSWORD,
 	HOST,PORT,DATABASE)
